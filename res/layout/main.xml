@@ -4,9 +4,41 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+	<TableLayout
+		android:layout_height = "fill_parent"
+		android:layout_width="fill_parent"
+		
+		android:padding = "10dip" >
+		<TextView
+			android:id = "@+id/calc_display"
+			android:lines = "1"
+			android:textSize = "20sp"
+			android:paddingLeft = "5dip"
+			android:paddingBottom = "10dip"
+		/>
+		<TableRow>
+			<Button	android:id = "@+id/button_7" 	android:layout_width = "50dip"	android:text = "@string/button_text_7" />
+			<Button	android:id = "@+id/button_8"	android:layout_width = "50dip"	android:text = "@string/button_text_8" />
+			<Button	android:id = "@+id/button_9"	android:layout_width = "50dip"	android:text = "@string/button_text_9" />
+			<Button	android:id = "@+id/button_div"	android:layout_width = "50dip"	android:text = "@string/button_text_div" />
+		</TableRow>
+		<TableRow>
+			<Button	android:id = "@+id/button_4"	android:text = "@string/button_text_4" />
+			<Button	android:id = "@+id/button_5"	android:text = "@string/button_text_5" />
+			<Button	android:id = "@+id/button_6"	android:text = "@string/button_text_6" />
+			<Button	android:id = "@+id/button_mult"	android:text = "@string/button_text_mult" />
+		</TableRow>
+		<TableRow>
+			<Button	android:id = "@+id/button_1"	android:text = "@string/button_text_1" />
+			<Button	android:id = "@+id/button_2"	android:text = "@string/button_text_2" />
+			<Button	android:id = "@+id/button_3"	android:text = "@string/button_text_3" />
+			<Button	android:id = "@+id/button_sub"	android:text = "@string/button_text_sub" />
+		</TableRow>
+		<TableRow>
+			<Button	android:id = "@+id/button_0"	android:text = "@string/button_text_0" />
+			<Button	android:id = "@+id/button_poi"	android:text = "@string/button_text_poi" />
+			<Button	android:id = "@+id/button_enter"	android:text = "@string/button_text_enter" />
+			<Button	android:id = "@+id/button_plus"	android:text = "@string/button_text_plus" />
+		</TableRow>
+	</TableLayout>
 </LinearLayout>
